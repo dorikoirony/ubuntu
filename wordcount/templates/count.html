@@ -1,0 +1,18 @@
+<h1>统计结果,总字数为{{count}}字</h1>
+<br>
+<h2>你的文本</h2>
+{{text}}
+<br>
+<h3>重复字数统计</h3>
+{{worddict}}
+<br>
+出现频率：
+<br>
+{% for i,j in sorted %}
+{{i}} - {{j}}
+<br>
+{% endfor %}
+{{sorted}}
+<br>
+<h4>最多的数</h4>
+{{maxtext}}:{{max}}
